@@ -342,6 +342,9 @@ section {
 .header.sticked a{
     color: #18695C !important;
 }
+.header.sticked a strong{
+  color: #ffffff !important;
+}
 
 .header.sticked a span{
     color: #ffffff !important;
@@ -745,12 +748,24 @@ section {
 
 .linha{
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   position: relative;
   min-height: 90vh;
  
   background: url("../img/fundo_linha_pesquisa.png") center center;
 }
+/* 
+.linha {
+  background: url("../img/fundo_linha_pesquisa.png") center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+@media (min-width: 1365px) {
+  .linha {
+    background-attachment: fixed;
+  }
+} */
 
 
 .etapas {
@@ -1925,6 +1940,8 @@ section {
   /* box-shadow: 0 8px 28px rgba(54, 64, 204, 0.2); */
 }
 
+
+
 .btn-book-a-table:hover {
   background: #262425 !important;
   /* box-shadow: 0 8px 28px rgba(13, 9, 63, 0.753); */
@@ -2119,7 +2136,7 @@ section {
 }
 .footer-copy{
     
-    padding: 40px;
+    
 }
 
 .card{
