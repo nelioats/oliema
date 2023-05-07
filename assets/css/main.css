@@ -308,6 +308,18 @@ section {
   }
 }
 
+/* teste */
+
+.imgbanner-alter {
+  max-width: 100%;
+}
+@media (max-width: 575px) {
+  .imgbanner-alter {
+    content: url('../img/hero-esquerd-mobile-img.png');
+  }
+}
+/* teste */
+
 .header.sticked {
   border-color: #fff;
   border-color: #eee;
