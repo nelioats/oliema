@@ -1,0 +1,27 @@
+1. DISPOSIÇÕES PRELIMINARES
+2. DO OBJETIVO: Objetivo
+3. CRONOGRAMA
+4. DOS PARTICIPANTES
+5. DAS INSCRIÇÕES
+6. ETAPAS DA OLIMPÍADA
+7. DA AVALIAÇÃO E CLASSIFICAÇÃO
+8. AS ATRIBUIÇÕES DO BOLSISTA NOS 12 MESES DE PESQUISA
+9. LINHA DE PESQUISA DOS BOLSISTAS
+
+
+/* Fonts */
+.cores-site{
+    color: #18695C; /*verde */
+    color: #f4f4f2; /*calrinho */
+    color: #023b66; /*azul */
+    color: #262425;  /*preto */
+}
+
+.hero {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  min-height: 90vh;
+  padding: 160px 0 60px 0;
+  background: url("../img/hero-bg.png") center center;
+}
