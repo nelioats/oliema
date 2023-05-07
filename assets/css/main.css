@@ -1,37 +1,24 @@
 
 /* Fonts */
 .cores-site{
-    color: #1F2A35;
-    color: #05588B;
-    color: #187FC3;
-    color: #20B0C0;
-/*
-    color: #1F2A35;
-    color: #05588B;
-    color: #187FC3;
-    color: #20B0C0;
-    color: #5A3732;
-    color: #AF6B2B;
-    color: #806C65;
-    color: #B59F91; */
-
-
-    /* color: #004D71;
-    color: #01557D; */
+    color: #18695C; /*verde */
+    color: #f4f4f2; /*calrinho */
+    color: #023b66; /*azul */
+    color: #262425;  /*preto */
 }
 
 
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Amatic SC", sans-serif;
-  --font-secondary: "Inter", sans-serif;
+  --font-default: 'Handlee', cursive, "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: 'Handlee', cursive, "Amatic SC", sans-serif;
+  --font-secondary: 'Handlee', cursive, "Inter", sans-serif;
 }
 
 /* Colors */
 :root {
-  --color-default: #1F2A35;
-  --color-primary: #05588B;
-  --color-secondary: #187FC3;
+  --color-default: #18695C;
+  --color-primary: #04518b;
+  --color-secondary: #262425;
 }
 
 /* Smooth scroll behavior */
@@ -56,6 +43,8 @@ a:hover {
   color: #1F2A35;
   text-decoration: none;
 }
+
+
 
 h1,
 h2,
@@ -92,7 +81,9 @@ label{
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
-
+.titulosFonts{
+  font-family: 'Handlee', cursive !important;
+}
 
 
 section {
@@ -350,7 +341,7 @@ section {
 }
 
 .header.sticked a{
-    color: #1F2A35 !important;
+    color: #18695C !important;
 }
 
 .header.sticked a span{
@@ -383,7 +374,7 @@ section {
   background: var(--color-primary);
   padding: 8px 20px;
   margin-left: 30px;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   transition: 0.3s;
 }
 
@@ -420,14 +411,14 @@ section {
 .btn-book-a-table-md:hover,
 .btn-book-a-table-sm:hover {
   color: #fff;
-  background: rgba(18, 93, 206, 0.8);
+  background: #09538b;
 }
 
 .btn-border {
 
     border-style: solid;
     border-color: var(--color-primary);
-    border-radius: 50px;
+    /* border-radius: 50px; */
     padding: 8px 20px;
     margin-left: 25px;
 }
@@ -435,7 +426,7 @@ section {
     color: #fff;
     background: var(--color-primary);
     transition: 0.3s;
-    box-shadow: 0 8px 28px rgba(18, 93, 206, 0.2);
+    /* box-shadow: 0 8px 28px rgba(18, 93, 206, 0.2); */
 }
 
 
@@ -483,8 +474,8 @@ section {
     padding: 0 3px;
     font-family: var(--font-secondary);
     font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
+    font-weight: 800;
+    color: #18695C; ;
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -497,7 +488,7 @@ section {
     margin-left: 5px;
   }
 
-  .navbar>ul>li>a:before {
+  /* .navbar>ul>li>a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -508,20 +499,20 @@ section {
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
-  }
+  } */
 
-  .navbar a:hover:before,
+  /* .navbar a:hover:before,
   .navbar li:hover>a:before,
   .navbar .active:before {
     visibility: visible;
     width: 100%;
-  }
+  } */
 
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #187FC3;
+    color: #262425;
   }
 
 
@@ -550,7 +541,7 @@ section {
     font-size: 15px;
     text-transform: none;
     font-weight: 600;
-    color: #1F2A35;
+    color: #18695C;
   }
 
   .navbar .dropdown ul a i {
@@ -560,7 +551,7 @@ section {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: var(--color-primary);
+    color: #262425;
   }
 
   .navbar .dropdown:hover>ul {
@@ -718,6 +709,29 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
+.participantes{
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  min-height: 90vh;
+ 
+  background: url("../img/hero-bg-participantes.png") center center;
+}
+
+
+.about {
+  background: url("../img/hero-bg_objetivo.png") center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+@media (min-width: 1365px) {
+  .about {
+    background-attachment: fixed;
+  }
+}
+
 .about .about-img {
 
     object-fit: contain;
@@ -876,8 +890,33 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us Section
+# cronograma
 --------------------------------------------------------------*/
+
+/* 
+.cronograma {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/hero-bg_cronograma.png") center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+@media (min-width: 1365px) {
+  .cronograma {
+    background-attachment: fixed;
+  }
+} */
+
+.cronograma{
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  min-height: 90vh;
+ 
+  background: url("../img/hero-bg_cronograma.png") center center;
+  
+}
+
+
 .why-us .why-box {
   padding: 30px;
   background: var(--color-primary);
@@ -1827,22 +1866,23 @@ section {
 }
 
 .hero .btn-book-a-table {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 36px;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   transition: 0.5s;
   color: #fff;
   background: var(--color-primary);
-  box-shadow: 0 8px 28px rgba(54, 64, 204, 0.2);
+  /* box-shadow: 0 8px 28px rgba(54, 64, 204, 0.2); */
 }
 
-.hero .btn-book-a-table:hover {
-  background: rgba(18, 77, 206, 0.8);
-  box-shadow: 0 8px 28px rgba(13, 9, 63, 0.753);
+.btn-book-a-table:hover {
+  background: #262425 !important;
+  /* box-shadow: 0 8px 28px rgba(13, 9, 63, 0.753); */
 }
+
 
 .hero .btn-watch-video {
   font-size: 16px;
@@ -1891,6 +1931,15 @@ section {
     transition: 0.5s;
     border: 1px solid #af782f;
     margin-bottom: 30px;
+}
+
+.box-blue{
+  
+  padding: 3px;
+  background-color: #023b66;
+  color: white;
+
+  
 }
 
 /*--------------------------------------------------------------
