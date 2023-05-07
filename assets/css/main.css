@@ -109,7 +109,7 @@ section {
   }
 
 .section-header h2 {
-  font-size: 13px;
+  font-size: 10px;
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0;
@@ -120,14 +120,14 @@ section {
 }
 .section-header-esquerda p {
     margin: 0;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 400;
     font-family: var(--font-secondary);
   }
 
 .section-header p {
   margin: 0;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 400;
   font-family: var(--font-secondary);
 }
@@ -422,7 +422,7 @@ section {
     border-color: var(--color-primary);
     /* border-radius: 50px; */
     padding: 8px 20px;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 .btn-border:hover {
     color: #fff;
